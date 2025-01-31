@@ -5,12 +5,17 @@
 
 // 3 - people.js
 const createFullName = require('./names.js');  // Importa la funzione da names.js
+const createHobbies = require('./hobbies.js'); 
 
 function getPerson() {
     // Usa la funzione per creare il nome completo
   const fullName = createFullName('alessandro', 'bianchi');  
+  const hobbies = createHobbies('tennis', 'sci', 'viaggiare');
+  
   // Restituisci un oggetto con la proprietà fullName
-  return { fullName };  
+  return { fullName, hobbies };  
 }
-
 console.log(getPerson()); 
+
+
+
