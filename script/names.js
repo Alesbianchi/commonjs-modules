@@ -11,4 +11,4 @@ function createFullName(firstName, lastName) {
   }
   
   // 2 - Esportazione della funzione
-  module.exports = {createFullName};
+  module.exports = createFullName;
